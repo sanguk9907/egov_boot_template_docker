@@ -1,0 +1,15 @@
+<svg id="copy_bu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_22769" data-name="사각형 22769" width="14" height="15" transform="translate(-0.363)" fill="#178385"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_20707" data-name="그룹 20707" transform="translate(-142 -273)">
+    <rect id="사각형_22770" data-name="사각형 22770" width="20" height="20" transform="translate(142 273)" fill="none"/>
+  </g>
+  <g id="그룹_20706" data-name="그룹 20706" transform="translate(4.008 3)">
+    <g id="그룹_20705" data-name="그룹 20705" transform="translate(-0.644)" clip-path="url(#clip-path)">
+      <path id="패스_7181" data-name="패스 7181" d="M3.372,12.74a1.078,1.078,0,0,1-.787-.337,1.078,1.078,0,0,1-.337-.787V1.124A1.078,1.078,0,0,1,2.586.337,1.078,1.078,0,0,1,3.372,0h8.244A1.078,1.078,0,0,1,12.4.337a1.078,1.078,0,0,1,.337.787V11.616a1.153,1.153,0,0,1-1.124,1.124Zm0-1.124h8.244V1.124H3.372ZM1.124,14.989a1.078,1.078,0,0,1-.787-.337A1.078,1.078,0,0,1,0,13.865V2.248H1.124V13.865h9.368v1.124Zm2.248-3.372v0Z" transform="translate(0.896 0)" fill="#178385"/>
+    </g>
+  </g>
+</svg>

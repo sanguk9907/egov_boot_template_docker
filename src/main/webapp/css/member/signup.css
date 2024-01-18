@@ -1,0 +1,463 @@
+@charset "UTF-8";
+.header_section,
+.footer_section {
+	display: none;	
+}
+
+.main_section {
+	width: 100%;
+	min-height: 100vh!important;
+	padding: 0!important;
+}
+
+input:read-only {
+    background-color: #F5F5F5;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.member_whole {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+.member_whole::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.signup_whole {
+    width: calc(100% - 32px);
+    max-width: 1490px;
+    margin: 24px auto;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.find_title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #178385;
+}
+
+.find_title p {
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.agreement_area,
+.essential_area {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    max-width: 570px;
+}
+
+.stage_box {
+    width: 100%;
+    background-color: #F2F8F6;
+}
+
+.stage_box>.display_flex {
+    padding: 14px 20px 20px 20px;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.stage_box input[type="checkbox"] + span {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    cursor: pointer;
+    background: url('/images/icon/signup_chk1.svg') no-repeat center center;
+    background-color: #DDDDDD;
+    margin: 0 auto;
+}
+
+.stage_label2 input[type="checkbox"] + span {
+    background: url('/images/icon/signup_chk2.svg') no-repeat center center;
+    background-color: #DDDDDD;
+}
+
+.stage_label3 input[type="checkbox"] + span {
+    background: url('/images/icon/signup_chk3.svg') no-repeat center center;
+    background-color: #DDDDDD;
+}
+
+.stage_box input[type="checkbox"]:checked + span {
+    background: url('/images/icon/signup_checkd1.svg') no-repeat center center;
+    background-color: #178385;
+}
+
+.stage_label2 input[type="checkbox"]:checked + span {
+    background: url('/images/icon/signup_checkd2.svg') no-repeat center center;
+    background-color: #178385;
+}
+
+.stage_box label span.text {
+	display: block;
+    font-size: 12px;
+    color: #707070;
+    font-weight: 300;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.stage_box input[type="checkbox"]:checked + span + span.text {
+    color: #178385;
+    font-weight: bold;
+} 
+
+.agreement_area {
+    padding: 30px 0 10px;
+}
+
+/* 약관동의 css 시작 */
+.agreement_area .inner_text {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.agreement_area .inner_text p {
+    font-size: 12px;
+    font-weight: 300;
+    word-break: keep-all;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.agreement_area .inner_box {
+    padding-top: 20px;
+}
+
+.agreement_area .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.agreement_text {
+    width: calc(100% - 20px);
+    height: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #DDDDDD;
+}
+
+.agreement_text .text_inner {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    overflow: auto;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+.text_inner::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.check_area {
+    margin-top: 20px;
+}
+
+.check_area label,
+.check_area label * {
+	cursor: pointer;
+}
+
+.check_area input[type="radio"] + span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.check_area input[type="radio"]:checked + span::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #178385;
+    cursor: pointer;
+}
+
+.check_area span.checkbox_text {
+	display: block;
+    font-size: 14px;
+    
+}
+
+.check_area label + label {
+    margin-left: 18px;
+}
+
+.signup_next,
+.request_btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #178385;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+.signup_next:hover
+.request_btn:hover {
+	background-color: #136567;
+}
+
+
+
+/* 필수정보입력 css 시작 */
+.essential_area {
+    padding: 30px 0;
+}
+
+.essential_area .inner_text {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup_form {
+    width: calc(100% - 22px);
+    padding: 20px 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.signup_form .input_box {
+    margin-top: 14px;
+}
+
+.signup_form .input_box:nth-child(1) {
+    margin-top: 0;
+}
+
+.signup_form p {
+    font-size: 12px;
+}
+
+.signup_form input {
+    width: calc(100% - 22px);
+    height: 34px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.input_box .display_flex {
+    margin-top: 4px;
+}
+
+.input_box .display_flex input {
+    width: calc(100% - 130px);
+    margin-top: 0;
+}
+
+.input_box button {
+    width: 100px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #178385;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.input_box button:hover {
+	background-color: #136567;
+}
+
+.input_box .display_flex + .display_flex {
+    margin-top: 8px;
+}
+
+.input_box span {
+    font-size: 8px;
+    color: #FF0000;
+}
+
+.input_box input.pw_input {
+    border: 1px solid #F40103;
+}
+
+
+@media (min-width: 1024px) {
+    .find_title p {
+        font-size: 24px;
+        padding: 30px 0 26px;
+    }
+
+    .stage_box .display_flex {
+        justify-content: space-around;
+    }
+
+    .agreement_area {
+        padding-bottom: 45px;
+    }
+
+    .stage_box>.display_flex {
+        padding: 20px;
+    }
+
+    .stage_box input[type="checkbox"] + span {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    .stage_label1 input[type="checkbox"] + span {
+        background-size: 28px 26px !important;
+    }
+
+    .stage_label2 input[type="checkbox"] + span {
+        background-size: 28px 28px !important;
+    }
+    
+    .stage_label3 input[type="checkbox"] + span {
+        background-size: 22px 28px !important;
+    }
+
+    .stage_box label span.text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* 약관동의 css 시작 */
+    .agreement_area .inner_text p {
+        font-size: 16px;
+    }
+
+    .agreement_area .inner_box {
+        padding-top: 30px;
+        position: relative;
+    }
+
+    .agreement_area .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .agreement_text {
+        height: 135px;
+    }
+
+    .agreement_area .check_area {
+        position: absolute;
+        top: 34px;
+        right: 0;
+        margin: 0;
+    }
+
+    .check_area input[type="radio"] + span {
+        width: 14px;
+        height: 14px;
+        border-radius: 8px;
+    }
+    
+    .check_area input[type="radio"]:checked + span::after {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: #178385;
+    }
+
+    .check_area p {
+        font-size: 16px;
+    }
+
+    .check_area label + label {
+        margin-left: 24px;
+    }
+
+    .agreement_text .text_inner {
+        font-size: 14px;
+    }
+
+    .signup_next {
+        height: 48px;
+        border-radius: 10px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+
+    /* 필수정보입력 css 시작 */
+    .essential_area .inner_text {
+        border: none;
+        padding-bottom: 0;
+        font-size: 18px;
+    }
+
+    .check_area {
+        margin-top: 30px;
+        justify-content: flex-start;
+    }
+
+    .signup_form {
+        margin-top: 25px;
+    }
+
+    .signup_form {
+        width: calc(100% - 46px);
+        padding: 20px 22px;
+    }
+
+    .signup_form p {
+        font-size: 15px;
+    }
+
+    .signup_form input {
+        margin-top: 10px;
+    }
+
+    .input_box .display_flex input {
+        width: calc(100% - 202px);
+    }
+
+    .input_box button {
+        width: 168px;
+    }
+
+    .input_box .display_flex {
+        margin-top: 10px;
+    }
+
+    .input_box .display_flex + .display_flex {
+        margin-top: 10px;
+    }
+
+    .input_box span {
+        font-size: 12px;
+    }
+
+
+}
+
+
+
+
+
+

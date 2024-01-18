@@ -1,0 +1,7 @@
+	<link rel="shortcut icon" href="/images/logo/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/css/common/reset.css"/>
+	<link rel="stylesheet" href="/css/common/common.css"/>
+	<link rel="stylesheet" href="/css/common/header.css"/>
+	<link rel="stylesheet" href="/css/common/popup.css"/>
+	<link rel="stylesheet" href="/css/common/footer.css"/>

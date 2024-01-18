@@ -1,0 +1,12 @@
+FROM --platform=linux/x86_64 mysql:5.7
+#FROM mysql:5.7
+ENV LC_ALL=C.UTF-8
+
+# 컨테이너 내의 SQL 파일을 실행하도록 추가
+COPY ./dump /docker-entrypoint-initdb.d
+
+# MySQL 설정 파일 추가
+RUN echo "[mysqld]\ninnodb_use_native_aio = 0" > /etc/mysql/conf.d/docker.cnf
+
+EXPOSE 3306
+CMD ["mysqld"]

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css); 
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+/* reset */
+main {
+    width: 100vw;
+    height: auto;
+}
+
+* {
+    margin: 0;  
+	padding: 0;
+    border: 0;
+    cursor: default;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif!important;
+    font-style: normal;
+    text-decoration: none;
+    outline: 0;
+    letter-spacing: 0;
+    word-break: break-all;
+}
+
+ol,ul, li, em, a, h2, hr, p, h3, h1, h4, h5, input, select, textarea {
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    outline: 0;
+}
+
+img { 
+    border: 0;
+}
+
+
+.roboto {
+    font-family: 'Roboto', sans-serif!important;
+}
