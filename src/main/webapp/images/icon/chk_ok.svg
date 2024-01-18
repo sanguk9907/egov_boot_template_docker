@@ -1,0 +1,9 @@
+<svg id="chk_ok" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="구성_요소_2_1" data-name="구성 요소 2 – 1">
+    <g id="사각형_162" data-name="사각형 162" fill="#fff" stroke="#ccc" stroke-width="1">
+      <rect width="20" height="20" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="19" rx="1.5" fill="none"/>
+    </g>
+  </g>
+  <path id="패스_11" data-name="패스 11" d="M-11.4,3692.44l5.566,5.25,6.434-9" transform="translate(15.896 -3683.189)" fill="none" stroke="#64b5aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

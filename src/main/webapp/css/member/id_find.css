@@ -1,0 +1,253 @@
+@charset "UTF-8";
+.header_section,
+.footer_section {
+	display: none;	
+}
+
+.main_section {
+	width: 100%;
+	min-height: 100vh!important;
+	padding: 0!important;
+}
+
+.find_whole {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    width: calc(100% - 32px);
+    max-width: 1490px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: auto;
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+.find_whole::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.find_title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #178385;
+}
+
+.find_title p {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.find_box {
+    padding: 20px 16px;
+    width: calc(100% - 32px);
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.find_box .title {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 34px;
+    word-break: keep-all;
+}
+
+.subtext_box .subtext1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.subtext_box .subtext2 {
+    font-size: 14px;
+    word-break: keep-all;
+    font-weight: 300;
+}
+
+.upload_box {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #178385;
+    margin-top: 6px;
+}
+
+.trunk_default {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.upload_box #drop {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#thumbnails {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+
+.file_btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.file_btn label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.file_btn label:disabled,
+.btn_box button:disabled {
+    background-color: #999999;
+}
+
+button.find_btn,
+a.find_btn {
+    display: block;
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    background-color: #178385;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button.find_btn:hover,
+a.find_btn:hover {
+    background-color: #136567;
+}
+
+a.find_btn {
+    text-align: center;
+    line-height: 44px;
+}
+
+.id_find2 .title {
+    margin-bottom: 30px;
+}
+
+.id_find2 .find_id_box {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #F2F8F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.id_find3 .title {
+    margin-bottom: 60px;
+}
+
+
+
+@media (min-width: 766px) {
+
+    .find_whole {
+        max-height: calc(100vh - 40px);
+    }
+
+    .find_box {
+        padding: 20px 0 100px;
+    }
+
+    .find_box .title {
+        margin-bottom: 50px;
+    }
+
+    .subtext_box {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    
+    .subtext_box .subtext1{
+        margin: 0 14px 0 0;
+    }
+
+    button.find_btn,
+	a.find_btn {
+        line-height: 40px;
+        height: 40px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .find_title {
+        border-bottom: 2px solid #178385;
+    }
+
+    .find_title p {
+        font-size: 24px;
+        padding: 30px 0 26px;
+    }
+
+    .find_box {
+        padding: 40px 0 120px;
+    }
+
+    .find_box .title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .subtext_box .subtext1 {
+        font-size: 18px;
+    }
+
+    .upload_box {
+        margin-top: 10px;
+    }
+
+}
+
+
+@media (min-width: 1300px) {
+
+    .find_box {
+        padding: 60px 0 194px;
+    }
+
+    .find_box .title {
+        margin-bottom: 70px;
+    }
+
+
+}
+
+
+
+

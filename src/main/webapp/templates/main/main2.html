@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{common/default_layout}"
+      >
+
+    <div layout:fragment="content">
+        본문 영역입니다.
+        <input type="file" onchange="readInputFile(this,event)" id="upload_input"/>
+        <button onclick="uploadImg()">uploadImg</button>
+        <img alt="" src="/images/logo/img2.jpg">
+    </div>
+
+</html>

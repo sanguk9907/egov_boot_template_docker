@@ -1,0 +1,11 @@
+*.DS_Store
+.factorypath
+.project
+
+pom.properties
+inputFiles.lst
+.settings
+*.war
+target/*
+src/test/*
+volume/*

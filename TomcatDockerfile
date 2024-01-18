@@ -1,0 +1,13 @@
+FROM openjdk:11-jdk
+
+RUN apt-get update && apt-get install -y maven
+COPY . /app
+
+WORKDIR /app
+RUN mvn clean package
+
+# 개발시
+CMD ["mvn", "spring-boot:run"]
+
+# 배포시
+# ENTRYPOINT ["java", "-jar", "target/boot-example-1.0.0.jar"]

@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  sql:
+    build:
+      context: .
+      dockerfile: SqlDockerfile
+    container_name: egov-sql
+    restart: always
+    environment:
+      MYSQL_DATABASE: database_oc
+      MYSQL_ROOT_PASSWORD: Oraclizer2024!@
+      TZ: "Asia/Seoul"
+    volumes:
+      - ./volume/mysql:/var/lib/mysql
+      - ./dump:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+    command: [ 'mysqld', '--character-set-server=utf8', '--collation-server=utf8_general_ci' ]
+
+  tomcat:
+    build:
+      context: .
+      dockerfile: TomcatDockerfile
+    container_name: egov-tomcat
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    depends_on:
+      - sql
+    environment:
+      SPRING_DEVTOOLS_RESTART_ENABLED: "true"
+      SPRING_DEVTOOLS_LIVERELOAD_ENABLED: "true"
+
+volumes:
+  persistent:

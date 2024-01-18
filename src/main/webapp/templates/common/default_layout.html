@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}"></title>
+
+<!-- 각 페이지의 script가 작성될 위치 -->
+<th:block layout:fragment="script">
+</th:block>
+<!-- 각 페이지의 css가 작성될 위치 -->
+<th:block layout:fragment="css">
+	<th:block th:replace="common/stylesheet :: stylesheetFragment"/>
+	<link th:inline="css" th:href="${css}" rel="stylesheet"/>
+</th:block>
+</head>
+<body>
+
+	<div th:replace="common/header::header"></div>
+
+	<div class="main_section">
+		<div layout:fragment="content"></div>
+	</div>
+
+	<div th:replace="common/footer::footer"></div>
+	<div th:replace="common/popup::popup"></div>
+	<th:block th:replace="common/script :: scriptFragment"/>
+</body>
+</html>
